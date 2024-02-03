@@ -1,0 +1,29 @@
+.container{
+    width: 200px;
+    height: 700px;
+    background: black;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+.top{
+    background-color: purple;
+    color: white;
+    padding: 20px 40px;
+}
+h4{
+    background-color: rgba(128, 128, 128, 0.51);
+    border: none;
+    color: white;
+}
+.row{
+    padding: 5px 220px;
+}
+input{
+    width: 520px;
+    padding:10px 50px;
+    border-radius: 2px;
+}
+i{
+    font-size: 2em;
+}
