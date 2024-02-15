@@ -22,14 +22,24 @@
     <h4 class="text-center mt-3">Add Your Today's Task</h4>
   <form action="/task" method="POST" >
     <label>Enter Your  Task: </label>
-    <input type="text" class="form-control-sm box pl-3" name="Name" placeholder="Add New Task" required /><br>
+    <input type="text" class="form-control-sm box pl-3" id="enterName" name="Name" placeholder="Add New Task" required /><br>
     <label >Choose Your Date :</label>
     <input type="date" class="form-control-sm box pl-3" name="Date"><br>
-    <button class="btn btn-info btn-sm btn-block mt-3" type="submit">Add Task</button>
+    <button class="btn btn-info btn-sm btn-block mt-3 " id="btn" onclick="Alert()"  type="submit">Add Task</button>
   </form>
 </div>
   <!-- Optional JavaScript -->
-  <script>
+  <script class="alert alert-success">
+    function Alert(){
+    let enterName = document.getElementById('enterName').value.trim();
+      if(enterName.length==0){
+        alert("enter task")
+      }else{
+        alert("Added")
+     } 
+    }
+
+
     const curDate = document.getElementById("date");
     const getCurrentDay = () => {
       var weekday = new Array(7);
