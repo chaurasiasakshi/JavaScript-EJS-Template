@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            background-color:#1B03A3;
+            color: wheat;
+            font-weight: 900;
+        }
+        h1{
+            font-size: 3em;
+            color:  #cce1f6;
+            text-decoration: underline;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <h1 class="text-center mt-5 ">Update Your Form</h1>
+  
+
+    <form action="/update/<%= Tt.id %>" method="POST">
+        <div class="col-md-4 mb-3">        
+          <input type="text" class="form-control"  name="Name" value="<%= Tt.Name %>"  placeholder="Add New Task"  required/>
+       <input type="date"  class="form-control"  value="<%= Tt.Date %>"  name="Date" >
+        </div>
+        <button class="btn btn-primary" type="submit">Add Task</button>
+    </form>
+</div>
+</body>
+</html>

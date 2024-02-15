@@ -1,0 +1,28 @@
+
+body{
+    background-image: url("https://img.freepik.com/premium-photo/gradient-background-with-light-hues_893571-6398.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    border: 3px dashed rgb(223, 187, 252);
+    padding: 25px;
+    margin: 2em;   
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.form-control-sm{
+    width: 12em;
+    outline: none;
+    font-weight: bold;
+margin-top: 2em;
+
+
+}
+
+

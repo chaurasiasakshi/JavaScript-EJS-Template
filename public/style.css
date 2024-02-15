@@ -1,29 +1,45 @@
-.container{
-    width: 200px;
-    height: 700px;
-    background: black;
-    position: relative;
-    left: 30px;
-    top: 10px;
+body{
+    background-image: url("https://img.freepik.com/premium-photo/gradient-background-with-light-hues_893571-6398.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.top{
-    background-color: purple;
-    color: white;
-    padding: 20px 40px;
+.heading{
+    color: blueviolet;
+font-weight: bolder;
+    text-shadow: 5px 2px 3px olivedrab;
+  margin-top: 1.5em;
+  font-size: 2.5em;
+  text-align: center;
 }
-h4{
-    background-color: rgba(128, 128, 128, 0.51);
-    border: none;
-    color: white;
+.btn{
+float: right;
+margin-right: 8em;
+margin-bottom: 2em;
 }
-.row{
-    padding: 5px 220px;
+th{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #3e2362;
 }
-input{
-    width: 520px;
-    padding:10px 50px;
-    border-radius: 2px;
+td{
+    font-size: 1.2em;
 }
 i{
-    font-size: 2em;
+    font-size: 1.5em;
+    color: blue;
 }
+.del{
+    color: red;
+}
+
+#check{
+    height: 2em;
+    width: 2em;
+   cursor: pointer;
+   accent-color: green;
+
+}
+
+
+
+
