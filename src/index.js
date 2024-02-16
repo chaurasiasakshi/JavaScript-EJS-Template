@@ -63,6 +63,7 @@ app.get('/update/:id', async (req, res) => {
 	// res.render("update.ejs")
 });
 
+
 app.post("/update/:id", async (req, res) => {
 	id = req.params.id;
 	const {Name, Date} = req.body;
@@ -71,3 +72,11 @@ app.post("/update/:id", async (req, res) => {
      {new: true});
 	res.redirect("/")
 });
+
+
+//Delete Person
+app.get("/delete/:id",async(req,res) =>{
+	id = req.params.id;
+	deletedData = await Task.findByIdAndDelete({_id:id});
+	res.redirect("/")	
+}
