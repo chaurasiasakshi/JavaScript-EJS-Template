@@ -29,6 +29,9 @@ app.get("/"  , async (req,res) => {
 app.get("/task",(req,res)=>{
     res.render("task")
 });
+app.get("/register",(req,res)=>{
+    res.render("register")
+});
 
 
 app.post("/task",async(req,res)=>{

@@ -9,7 +9,7 @@ console.log(error));
 // Create Schema
 const TaskSchema = new mongoose.Schema({
     Name: {type : String },
-    Date: { type: Date }
+    Date: { type: Date ,default:Date.now()},
 
 });
 // const RegSchema = new mongoose.Schema({
