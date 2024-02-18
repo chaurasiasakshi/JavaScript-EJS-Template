@@ -12,22 +12,15 @@ const TaskSchema = new mongoose.Schema({
     Date: { type: Date ,default:Date.now()},
 
 });
-// const RegSchema = new mongoose.Schema({
-//     Name: {type : String , required: true},
-//     Email: { type: String, required: true },
-//     Image: { type: String, required: true },
-//     Password: { type: String, required: true},
-//     Confirm_Password : { type: String, required: true},
-//     Created: { type: Date, required: true, default:Date.now}
+const RegSchema = new mongoose.Schema({
+    name: {type : String , required: true},
+    email: { type: String, required: true },
+    password: { type: String, required: true},
+    c_password : { type: String, required: true},
+   
 
 
-// });
+});
 
 module.exports = mongoose.model("Store",TaskSchema);
-// module.exports = mongoose.model("Register",RegSchema);
-
-// RegModel = mongoose.model("Registration",Register);
-
-
-// Exporting
-//  module.exports = TaskSchema;
+module.exports = mongoose.model("Register",RegSchema);

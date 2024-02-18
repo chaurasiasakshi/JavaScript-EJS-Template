@@ -46,19 +46,14 @@
 <body>
     <div class="container ">
        
-    <form method="POST" action="/register" >
-        <h1 class="text-center">Registration Form</h1>
-        <i class="fa-solid fa-address-card"></i><br>
-        <label>Name</label><br>
-        <input type="text" name="name" class="mb-3"/><br>
-        <label>Email</label><br>
-        <input type="email" name="email" class="mb-3" /><br>
-        <label>Password</label><br>
-        <input type="password" name="password" class="mb-3" /><br>
-        <label>Confirm_Password</label><br>
-        <input type="password" name="c_password" class="mb-3" /><br><br>
+        <h1 class="text-center">LOGIN</h1><br>
+        <form action="index" method="post">
+            User Name : <input type="text" name="username"><br><br>
+            Password:   <input type="password" name="password"><br><br>
         <button  class="btn btn-outline-info btn-lg btn-block">Register</button>
-    </form>
+          
+           <p> Not Register <a href="/register">Register Here</a></p>
+        </form>
 </div>
 </div>
 </div>
