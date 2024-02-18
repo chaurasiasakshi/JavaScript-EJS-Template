@@ -95,7 +95,7 @@ app.post('/register', async(req,res)=>{
         const userData = await DB.insertMany(data);
         console.log(userData)
 
-        res.redirect("/register")
+        res.redirect("/login")
     }
 });
 
@@ -112,6 +112,7 @@ app.post('/login', async(req, res) => {
         if(check){
             const result = await phash.compare(req.body.password, check.password);
             if(result){
+                res.redirect("/index")
                 res.send('Login Successful')
                 
             }
